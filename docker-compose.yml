@@ -13,7 +13,7 @@ services:
       spring.sleuth.otel.config.trace-id-ratio-based: 1
       logging.level.root: info
     ports:
-      - "9091:8080"
+      - "8080:9090"
 
   order-app:
     build:
@@ -25,6 +25,8 @@ services:
       OTEL_RESOURCE_ATTRIBUTES=service.name: order-service
       OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4317
       spring.sleuth.otel.config.trace-id-ratio-based: 1
+    ports:
+      - "8081:9091"
 
   otel-collector:
     image: otel/opentelemetry-collector:0.47.0
