@@ -11,8 +11,8 @@
 	<groupId>dev.codemesh.opentelemetry</groupId>
 	<artifactId>cart-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ecommerce-cart-service</name>
-	<description>Demo project for Spring Boot</description>
+	<name>cart-service</name>
+	<description>Cart service for opentelemetry demo</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
